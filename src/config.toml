@@ -1,0 +1,255 @@
+# Page settings
+
+baseurl = "https://www.rickneeft.dev"
+languageCode = "en-us"
+title = "RND: Rick Neeft Development"
+theme = "orbit"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Resume site"
+    author = "Rick Neeft"
+    title = "RND: Rick Neeft Development"
+    applicationInsights = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Rick Neeft"
+        tagline = "Software Developer"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: rick@chroomsoft.nl"
+        title = "rick@chroomsoft.nl"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//www.linkedin.com/in/rneeft/"
+        title = "linkedin.com/in/rneeft"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/rneeft"
+        title = "github.com/rneeft"
+
+        [[params.contact.list]]
+        class = "twitter"
+        icon = "fa-twitter"
+        url = "//twitter.com/rneeft"
+        title = "@rneeft"
+
+        [[params.contact.list]]
+        class = "stackoverflow"
+        icon = "fa-stack-overflow"
+        url = "//stackoverflow.com/users/1661146/rick-neeft"
+        title = "stackoverflow.com"
+
+    # Certificate section
+    [params.certifications]
+        enable = true
+        title = "Certifications"
+
+        [[params.certifications.list]]
+        name = "Azure Developer"
+        meta = "AZ-203"
+        dates = "2019 - 2022"
+        url = "https://www.youracclaim.com/badges/bc5f2b11-6a8b-4fee-94b6-897bf1b5a7c3/public_url"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "Master Software Engineering"
+        college = "Open University"
+        dates = "2015 - 2019 (DNF)"
+        topics = "* Academic Writing\n* Design Patterns\n* Research Preperation\n* Software Architecture\n* Software Evolution\n* Software Life Cycle\n* System Verification and Testing"
+
+        [[params.education.list]]
+        degree = "Pre-Master Software Engineering"
+        college = "Open University"
+        dates = "2015 - 2016"
+
+        [[params.education.list]]
+        degree = "Bachelor of ICT (Software Engineering)"
+        college = "Fontys University of Applied Sciences, Eindhoven"
+        dates = "2006 - 2010"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "Dutch"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Professional"
+
+        [[params.language.list]]
+        language = "French"
+        level = "Learning"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Cycling"
+
+        [[params.interests.list]]
+        interest = "Coding"
+
+        [[params.interests.list]]
+        interest = "Gaming"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "Started my coding journey at the age of 8 with my MSX2 computer and programming in BASIC. Currently having over 10 years of experience in application development using Microsoft .NET technologies.\n\n I focus on creating clean (Clean Code), testable (TDD) and maintainable (SOLID) code. During the last couple of years, I’m involved in creating globalised applications with Microsoft Azure."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Software Developer"
+        dates = "February 2019 - Present"
+        company = "VECOZO, Tilburg"
+        details = "Working for the Dutch national data communication highway for healthcare information. We offer a safe and high-quality digital environment in which health parties can share administrative information. I'm currently working on the **Mitz** project (Backend - Service Fabric). With Mitz, patients from the Netherlands are able to give permissions to healthcare workers to exchange their medical data."
+
+        [[params.jobs.list]]
+        position = "Software Developer (at VECOZO)"
+        dates = "July 2018 - January 2019"
+        company = "iSense, Tilburg"
+        details = "Working at iSense for VECOZO"
+
+        [[params.jobs.list]]
+        position = "Lead Software Engineer"
+        dates = "August 2013 - June 2018"
+        company = "BDO Global IT, Eindhoven"
+        details = "Worked on different projects using various technologies, like ASP Core, Azure Active Directory, and Xamarin. In the last two projects, I was the Lead developer and scrum master. I coached the team in writing solid and clean code and I set up the architecture vision for the product.\n\nI coordinated the Patterns and Practices guild, a lightweight community of interest, in which we set out the technology stack, coding standards cross teams and build up initiatives that create awareness around topics like clean code, SOLID and design patterns.\n\nSome of the projects I worked on are listed below:\n\n* Web application in which the clients of BDO were able to deliver documents that BDO needs to start an Audit.\n* A Universal Windows and Web application that help BDO in getting more international referrals by providing an International Pricing Index calculator. \n* Android/iOS Application with a Web backend – created with, ASP Core 1.1, Xamarin and Azure Mobile Apps – that allowed BDO Employees to perform stock counting at their clients’ warehouses. \n* Helped with starting a rebuild of the BDO Audit Tool, build with .NET 4.5, WPF, CQRS, Spec Flow."
+
+        [[params.jobs.list]]
+        position = "SharePoint Consultant/Developer"
+        dates = "February 2011 - August 2013"
+        company = "The Triple A Company, Zaltbommel"
+        details = "Built custom-made solutions for customers. Major projects were:\n* An Exam module created with Silverlight including a management Portal created in SharePoint 2013.\n* Portal, created with SharePoint 2013 and WF, to manage the outsourcing of projects. External companies could deliver the bids for the projects through a standalone web application.\n* Continuing developing on the CRM+ system, including a Microsoft Outlook plug-in to make it easier to book hours."
+
+        [[params.jobs.list]]
+        position = "Graduation project"
+        dates = "September 2010 - February 2011"
+        company = "The Triplea A Company, Zaltbommel"
+        details = "Graduation project was divided into two parts:\n1. Completing the course: SharePoint Academy for IT Specialists.\n2. Creating a SharePoint CRM+ system.\n\nI completed this project with a fellow student."
+
+        [[params.jobs.list]]
+        position = "Junior Software Developer"
+        dates = "July 2009 - September 2010"
+        company = "Linfosys, Goirle"
+        details = "Started as a summer job in which they asked me to rebuild the website reparatiestatus.nl in .NET 3.5. Continued working at the company during my Bachelor study and created a few other projects.\n\nI’m most proud of the development of their latest product [OnView](https://www.onview.nl) (Dutch). I started this application using, .NET 4.0, SQL Server 2008 R2 and Silverlight 4. After I left the company they continued to build upon this amazing product which is now being used by over 1000 customers in the debt and money assistance field throughout The Netherlands. Their latest update is a remake of the UI in HTML 5 and a direct link to the Dutch court."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "Some of my side projects. Some more 'alive' than others"
+
+        [[params.projects.list]]
+        title = "Top 2000"
+        url = "https://www.microsoft.com/en-us/store/p/top-2000/9wzdncrdr106"
+        tagline = "App written in Xamarin for [Android](https://play.google.com/store/apps/details?id=com.chroomsoft.top2000) and in UWP for Windows. This is the most amazing and user-friendly app for the Top 2000. The app was designed for a more fluid experience, as well as to provide users an easier way to keep track of the list."
+
+        [[params.projects.list]]
+        title = "My Blue Screen"
+        url = "https://www.microsoft.com/nl-nl/p/my-blue-screen/9wzdncrdr0sk"
+        tagline = "Simple Windows application to prank your friends with a fake blue screen on their computer. Still get regular downloads."
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "C#"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Clean code"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "XAML Designs"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "DevOps & Autimation"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "TDD"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "Xamarin"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "SQL"
+        level = "45%"
+
+        [[params.skills.list]]
+        skill = "HTML5 & CSS"
+        level = "20%"
+
+
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "Rick Neeft"

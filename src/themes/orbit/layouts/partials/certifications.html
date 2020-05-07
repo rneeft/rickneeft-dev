@@ -1,0 +1,12 @@
+<div class="education-container container-block">
+    <h2 class="container-block-title">{{ .Site.Params.certifications.title }}</h2>
+    {{ range .Site.Params.certifications.list}}
+    <a href="{{ .url }}">
+        <div class="item">
+            <h4 class="degree">{{ .name }}</h4>
+            <h5 class="meta">{{ .meta }}</h5>
+            <div class="time">{{ .dates }}</div>
+        </div>
+    </a>
+    {{ end }}  
+</div>

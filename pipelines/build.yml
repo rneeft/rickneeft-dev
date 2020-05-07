@@ -1,0 +1,21 @@
+steps:
+  - task: HugoTask@1
+    inputs:
+      source: 'src\'
+      destination: '$(Build.ArtifactStagingDirectory)\site'
+      baseURL: 'https://hostname.here/'
+
+  - publish: '$(Build.ArtifactStagingDirectory)\site'
+    displayName: 'Publishing Site'
+    artifact: Site
+
+  - task: CopyFiles@2
+    displayName: 'Copy Azure Resources'
+    inputs:
+      SourceFolder: pipelines/
+      Contents: '*.json'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)/Azure'
+
+  - publish: '$(Build.ArtifactStagingDirectory)/Azure'
+    displayName: 'Publishing Azure'
+    artifact: Azure

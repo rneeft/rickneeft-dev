@@ -1,4 +1,4 @@
-name: $(product) site $(version) build $(counter) - 
+name: GitHub - $(product) site $(version) build $(counter) - 
 
 variables:
   major: 1

@@ -151,15 +151,9 @@ disable404 = true
 
         [[params.jobs.list]]
         position = "Software Developer"
-        dates = "February 2019 - Present"
+        dates = "July 2018 - Present"
         company = "VECOZO, Tilburg"
-        details = "Working for the Dutch national data communication highway for healthcare information. We offer a safe and high-quality digital environment in which health parties can share administrative information. I'm currently working on the **Mitz** project (Backend - Service Fabric). With Mitz, patients from the Netherlands are able to give permissions to healthcare workers to exchange their medical data."
-
-        [[params.jobs.list]]
-        position = "Software Developer (at VECOZO)"
-        dates = "July 2018 - January 2019"
-        company = "iSense, Tilburg"
-        details = "Working at iSense for VECOZO"
+        details = "Working for the Dutch national data communication highway for healthcare information. We offer a safe and high-quality digital environment in which health parties can share administrative information. I'm currently working on the **Mitz** project (Backend - Service Fabric). With Mitz, patients from the Netherlands are able to give permissions to healthcare workers to exchange their medical data.\n\nFrom July 2018 till Feburary 2019 I was working at VECOZO via iSense."
 
         [[params.jobs.list]]
         position = "Lead Software Engineer"
@@ -169,19 +163,19 @@ disable404 = true
 
         [[params.jobs.list]]
         position = "SharePoint Consultant/Developer"
-        dates = "February 2011 - August 2013"
+        dates = "February 2011 - July 2013"
         company = "The Triple A Company, Zaltbommel"
         details = "Built custom-made solutions for customers. Major projects were:\n* An Exam module created with Silverlight including a management Portal created in SharePoint 2013.\n* Portal, created with SharePoint 2013 and WF, to manage the outsourcing of projects. External companies could deliver the bids for the projects through a standalone web application.\n* Continuing developing on the CRM+ system, including a Microsoft Outlook plug-in to make it easier to book hours."
 
         [[params.jobs.list]]
         position = "Graduation project"
-        dates = "September 2010 - February 2011"
+        dates = "September 2010 - January 2011"
         company = "The Triplea A Company, Zaltbommel"
         details = "Graduation project was divided into two parts:\n1. Completing the course: SharePoint Academy for IT Specialists.\n2. Creating a SharePoint CRM+ system.\n\nI completed this project with a fellow student."
 
         [[params.jobs.list]]
         position = "Junior Software Developer"
-        dates = "July 2009 - September 2010"
+        dates = "July 2009 - August 2010"
         company = "Linfosys, Goirle"
         details = "Started as a summer job in which they asked me to rebuild the website reparatiestatus.nl in .NET 3.5. Continued working at the company during my Bachelor study and created a few other projects.\n\nI’m most proud of the development of their latest product [OnView](https://www.onview.nl) (Dutch). I started this application using, .NET 4.0, SQL Server 2008 R2 and Silverlight 4. After I left the company they continued to build upon this amazing product which is now being used by over 1000 customers in the debt and money assistance field throughout The Netherlands. Their latest update is a remake of the UI in HTML 5 and a direct link to the Dutch court."
 
@@ -190,7 +184,7 @@ disable404 = true
         enable = true
         icon = "fa-archive"
         title = "Projects"
-        intro = "Some of my side projects. Some more 'alive' than others"
+        intro = "Some of my side projects. Some more 'alive' than others."
 
         [[params.projects.list]]
         title = "Top 2000"
@@ -201,6 +195,11 @@ disable404 = true
         title = "My Blue Screen"
         url = "https://www.microsoft.com/nl-nl/p/my-blue-screen/9wzdncrdr0sk"
         tagline = "Simple Windows application to prank your friends with a fake blue screen on their computer. Still get regular downloads."
+
+        [[params.projects.list]]
+        title = "Various Project"
+        url = "https://www.github.com/rneeft"
+        tagline = "Have a look at my GitHub page for some (little) projects. For example check out the code for this [web site](https://github.com/rneeft/rickneeft-dev) build with Hugo."
 
     # Skills section
     [params.skills]

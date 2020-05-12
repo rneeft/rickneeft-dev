@@ -2,7 +2,7 @@ name: GitHub - $(product) site $(version) build $(counter) -
 
 variables:
   major: 1
-  minor: 0
+  minor: 1
   patch: 0
   version: $[format('{0}.{1}.{2}', variables['major'], variables['minor'], variables['patch'])]
   counter: $[counter(variables['version'], 0)]

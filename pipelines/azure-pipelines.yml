@@ -27,22 +27,6 @@ stages:
     steps:
     - template: build.yml
 
-- stage: Test
-  jobs:
-  - deployment: ReleaseTST
-    displayName: 'Release TST'
-    variables:
-      stage: 'TST'
-      hostName: 'tst.rickneeft.dev'
-    pool:
-      name: At Home
-    environment: 'TST'
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - template: release.yml
-
 - stage: Production
   jobs:
   - deployment: ReleasePRD

@@ -1,8 +1,8 @@
-name: $(product) site $(version) build $(counter) - 
+name: GitHub - $(product) site $(version) build $(counter) - 
 
 variables:
   major: 1
-  minor: 0
+  minor: 1
   patch: 0
   version: $[format('{0}.{1}.{2}', variables['major'], variables['minor'], variables['patch'])]
   counter: $[counter(variables['version'], 0)]
@@ -26,22 +26,6 @@ stages:
       name: At Home
     steps:
     - template: build.yml
-
-- stage: Test
-  jobs:
-  - deployment: ReleaseTST
-    displayName: 'Release TST'
-    variables:
-      stage: 'TST'
-      hostName: 'tst.rickneeft.dev'
-    pool:
-      name: At Home
-    environment: 'TST'
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - template: release.yml
 
 - stage: Production
   jobs:

@@ -132,6 +132,10 @@ disable404 = true
         [[params.interests.list]]
         interest = "Gaming"
 
+        [[params.interests.list]]
+        interest = "NES Classic Tetris"
+        extraInfo = "(PAL HS: 303.688 Lvl 15)"
+
 # Main body sections
 
     # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
